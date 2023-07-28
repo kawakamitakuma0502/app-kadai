@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+
+}
+
+h2 {
+    border-bottom: 1px solid #585959;
+}
+
+h3 {
+    border-bottom: 1px solid #585959;
+}
+
+ul li, ol li {
+    padding: 1em;
+    list-style-position: inside;
+}
+
+div.section {
+    margin-top: 2em;
+}
+
+tr {
+    padding: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.contacts {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.contact-ttl {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.contact-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-item,
+.contact-body {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-item {
+    text-align: left;
+    width: 30%;
+    background-color: #eee;
+}
+
+.contact-body {
+    width: 70%;
+}
+
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+.contact-sex + .contact-sex {
+    margin-left: 10px;
+}
+
+.contact-sex-txt {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-select {
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <script>
+        function validateForm() {
+            // 入力チェックを行う
+            let Affiliation = document.querySelector('#Affiliation').value;
+            let name = document.querySelector('#name').value;
+            let mail = document.querySelector('#mail').value;
+            let tel = document.querySelector('#tel').value;
+            let title = document.querySelector('#title').value;
+            let inquiry = document.querySelector('#inquiry').value;
+
+            if(Affiliation === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }else if(name === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }else if(mail === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }else if(tel === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }else if(title === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }else if(inquiry === ""){
+                confirm("Error" + "すべての項目を入力してください。");
+                return false;
+            }
+
+            // 入力内容の確認
+            confirm("所属（企業名・部署名・役職）" + Affiliation + "\n名前" + name + "\nメール" + mail + "\n電話番号" + tel + "\nタイトル" + title +  + "\nお問い合わせ内容" + inquiry + "\nこの内容でよろしいですか？")
+        }
+    </script>
+</head>
+<body>
+    <h1>TGS</h1>
+    <h2>TGS-Top</h2>
+    <ul>
+        <li><a href="Game.html">ゲーム</a></li>
+        <li><a href="CG.html">CG</a></li>
+        <li><a href="Sound.html">サウンド</a></li>
+        <li><a href="Kikaku.html">企画書</a></li>
+    </ul>
+
+    <h3>学校情報</h3>
+    <p><a href="https://www.oic-ok.ac.jp/" target="_blank">学校公式HP</a></p>
+    <h3>学校公式SNS</h3>
+    <p><a href="https://twitter.com/shirokuma014" target="_blank">学校公式twitter</a></p>
+    <p><a href="https://www.facebook.com/oic.okayama/" target="_blank">学校公式facebook</a></p>
+    <p><a href="https://www.instagram.com/shirokuma_sensei/?hl=ja" target="_blank">学校公式instagram</a></p>
+    <p><a href="https://page.line.me/oic-okayama" target="_blank">学校公式line</a></p>
+    <p><a href="https://www.youtube.com/user/oicch" target="_blank">学校公式youtube</a></p>
+    
+
+    <h3 class="contacts">問い合わせフォーム</h3>
+    <div class="contact">
+        <h3 class="contact-ttl">Contact</h3>
+
+        <form method="POST" action="register.php" onsubmit="return validateForm()">
+            <table class="contact-table">
+                <tr>
+                    <th class="contact-item">所属（企業名・部署名・役職）</th>
+                    <td class="contact-body">
+                        <input type="text" id="Affiliation" name="Affiliation" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">名前</th>
+                    <td class="contact-body">
+                        <input type="text" id="name" name="name" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">メール</th>
+                    <td class="contact-body">
+                        <input type="email" id="mail" name="mail" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">電話番号</th>
+                    <td class="contact-body">
+                        <input type="tel" id="tel" name="tel" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">タイトル</th>
+                    <td class="contact-body">
+                        <input type="text" id="title" name="title" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">お問い合わせ内容</th>
+                    <td class="contact-body">
+                        <textarea name="inquiry" id="inquiry" class="form-textarea"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <input class="contact-submit" type="submit" value="送信" />
+        </form>
+    </div>
+</body>
+</html>
